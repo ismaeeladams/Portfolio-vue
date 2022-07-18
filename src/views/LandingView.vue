@@ -33,7 +33,8 @@ export default {
   /* max-width: 100%;
   height: auto; */
   height: 100vh;
-  background-image: url("http://127.0.0.1:5500/src/assets/Images/Landing.jpg");
+  /* background-image: url("http://127.0.0.1:5500/src/assets/Images/Landing.jpg"); */
+  background: #0e139a;
   background-size: cover;
   background-position: center;
   position: relative;

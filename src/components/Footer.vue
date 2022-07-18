@@ -20,4 +20,12 @@ export default {
   name: "Footer",
 };
 </script>
-<style></style>
+<style>
+footer {
+  background-color: #18182f;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+</style>

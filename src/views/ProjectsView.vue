@@ -3,12 +3,10 @@
   <div>
     <section id="project" class="project">
       <div class="container">
-        <div class="section-header">Projects</div>
-        <div
-          class="project-content row justify-content-between align-items-between flex-md-row flex-sm-column"
-        >
+        <div class="section-header"> <h1>Projects</h1></div>
+        <div class="project-content row justify-content-between align-items-between flex-md-row flex-sm-column">
           <div class="project-section container-fluid col-md-6">
-            <div class="project-card">
+            <div class="project-card-pro">
               <div class="card" style="width: 100%">
                 <img
                   src="https://picsum.photos/200/300?random=5"
@@ -33,7 +31,7 @@
                 </div>
               </div>
             </div>
-            <div class="project-card">
+            <div class="project-card-pro">
               <div class="card" style="width: 100%">
                 <img
                   src="https://picsum.photos/200/300?random=2"
@@ -60,7 +58,7 @@
             </div>
           </div>
           <div class="project-section container-fluid col-md-6">
-            <div class="project-card">
+            <div class="project-card-pro">
               <div class="card" style="width: 100%">
                 <img
                   src="https://picsum.photos/200/300?random=3"
@@ -85,7 +83,7 @@
                 </div>
               </div>
             </div>
-            <div class="project-card">
+            <div class="project-card-pro">
               <div class="card" style="width: 100%">
                 <img
                   src="https://picsum.photos/200/300?random=4"
@@ -115,19 +113,41 @@
       </div>
     </section>
   </div>
+   <Footer />
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   components: {
     NavBar,
+    Footer,
   },
 };
 </script>
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: white;
+}
 #project {
   /* height: 102vh; */
   padding: 5% 10%;
   background-color: #121231;
+}
+.card-title{
+  color: black;
+}
+
+.project-card-pro{
+  margin-bottom: 10px;
+  background-color: #121231;
+  box-shadow: #141327;
+}
+.card-body > a {
+  margin-right: 10px;
 }
 </style>

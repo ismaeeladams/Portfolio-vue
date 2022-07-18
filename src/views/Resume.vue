@@ -68,16 +68,26 @@
       </div>
     </section>
   </div>
+     <Footer />
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   components: {
     NavBar,
+    Footer,
   },
 };
 </script>
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: white;
+}
 #resume {
   /* height: 137vh; */
   padding: 5% 10%;
