@@ -1,12 +1,11 @@
 <template>
   <NavBar />
   <section id="contact" class="contact">
-      <div class="sec-header">
-        <h2>Questions</h2>
-        <h3>Let's get in touch</h3>
-      </div>
-      <div class="form-and-details-container-fliud">
-        <div class="row">
+    <div class="sec-header">
+      <h2>Let's get in touch</h2>
+    </div>
+    <div class="form-and-details-container-fliud">
+      <div class="row">
         <div class="details-container col-md-6">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
@@ -16,9 +15,16 @@
             <li>
               <i class="fa-solid fa-location-dot"></i>Grassy Park, Cape Town
             </li>
-            <li> <a href="tel:072 840 1187"><i class="fa-solid fa-mobile-button"></i></a> 072 840 1187</li>
-            <li> 
-              <a href="mailto:adamsismaeel@gmail.com"> <i class="fa-solid fa-paper-plane"></i></a> 
+            <li>
+              <a href="tel:072 840 1187"
+                ><i class="fa-solid fa-mobile-button"></i
+              ></a>
+              072 840 1187
+            </li>
+            <li>
+              <a href="mailto:adamsismaeel@gmail.com">
+                <i class="fa-solid fa-paper-plane"></i
+              ></a>
               adamsismaeel@gmail.com
             </li>
           </ul>
@@ -50,23 +56,23 @@
           <form action="https://formspree.io/f/xeqnvqby" method="post">
             <div class="mb-3 y">
               <input
-              required
-              name="name"
+                required
+                name="name"
                 type="text"
                 class="form-details"
                 id="name"
                 placeholder="Name"
               />
               <input
-              required
-              name="number"
+                required
+                name="number"
                 type="tell"
                 class="form-details"
                 id="phone"
                 placeholder="Contact No"
               />
               <input
-              required
+                required
                 type="email"
                 class="form-details"
                 id="email"
@@ -75,7 +81,7 @@
             </div>
             <div class="mb-3">
               <textarea
-              required
+                required
                 class="form-control"
                 id="message"
                 rows="3"
@@ -91,10 +97,10 @@
             </div>
           </form>
         </div>
-        </div>
       </div>
-    </section> 
-     <Footer />
+    </div>
+  </section>
+  <Footer />
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
@@ -106,7 +112,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -142,7 +148,7 @@ textarea.form-control {
   border: none;
   border-bottom: solid;
   margin-bottom: 10px;
-  background-color:  transparent ;
+  background-color: transparent;
 }
 
 .owl-carousel .owl-item img {
@@ -152,6 +158,7 @@ textarea.form-control {
 .bi {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .rounded-circle {
@@ -164,6 +171,7 @@ textarea.form-control {
 }
 li.m {
   border-radius: 50%;
+  margin-right: 10px;
 }
 .o {
   background-color: #0d6efd;

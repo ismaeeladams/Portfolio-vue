@@ -3,9 +3,11 @@
   <div>
     <section id="project" class="project">
       <div class="container">
-        <div class="section-header"> <h1>Projects</h1></div>
-        <div class="project-content row justify-content-between align-items-between flex-md-row flex-sm-column">
-          <div class="project-section container-fluid col-md-6">
+        <div class="section-header"><h1>Projects</h1></div>
+        <div
+          class="project-content row justify-content-between align-items-between flex-md-row flex-sm-column"
+        >
+          <div class="project-section container-fluid col-md-4">
             <div class="project-card-pro">
               <div class="card" style="width: 100%">
                 <img
@@ -57,7 +59,59 @@
               </div>
             </div>
           </div>
-          <div class="project-section container-fluid col-md-6">
+          <div class="project-section container-fluid col-md-4">
+            <div class="project-card-pro">
+              <div class="card" style="width: 100%">
+                <img
+                  src="https://picsum.photos/200/300?random=3"
+                  class="card-img-top"
+                  alt="Pic"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio</h5>
+
+                  <a
+                    href="https://github.com/ismaeeladams/portfolio.git"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://grand-praline-11396e.netlify.app"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card-pro">
+              <div class="card" style="width: 100%">
+                <img
+                  src="https://picsum.photos/200/300?random=4"
+                  class="card-img-top"
+                  alt="Pic"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mock</h5>
+
+                  <a
+                    href="https://github.com/ismaeeladams/mock.git"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://clinquant-figolla-c9ddff.netlify.app"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-section container-fluid col-md-4">
             <div class="project-card-pro">
               <div class="card" style="width: 100%">
                 <img
@@ -113,7 +167,7 @@
       </div>
     </section>
   </div>
-   <Footer />
+  <Footer />
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
@@ -125,10 +179,10 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 * {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: white;
@@ -138,16 +192,24 @@ export default {
   padding: 5% 10%;
   background-color: #121231;
 }
-.card-title{
+.card-title {
   color: black;
 }
 
-.project-card-pro{
+.project-card-pro {
   margin-bottom: 10px;
+  padding-bottom: 1.5rem;
   background-color: #121231;
   box-shadow: #141327;
 }
 .card-body > a {
   margin-right: 10px;
+}
+img {
+  width: 100%;
+  height: 30vh;
+}
+.row > * {
+  padding-right: 1.5rem;
 }
 </style>

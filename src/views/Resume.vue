@@ -9,7 +9,7 @@
         <div class="container row flex-md-row flex-sm-column">
           <div class="education-container col-md-6">
             <h4>Education</h4>
-            <div class="card-res" style="width: 25rem">
+            <div class="card-res" style="width: 28rem">
               <div class="card-body">
                 <h5 class="card-title">Life Choices</h5>
                 <h6 class="card-subtitle mb-2 text-muted">
@@ -18,7 +18,7 @@
                 <h6 class="card-subtitle mb-2 text-muted">2022-Present</h6>
               </div>
             </div>
-            <div class="card-res" style="width: 25rem">
+            <div class="card-res" style="width: 28rem">
               <div class="card-body">
                 <h5 class="card-title">Oracle Academy High School</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Matric</h6>
@@ -28,7 +28,14 @@
           </div>
           <div class="experience-cotainer col-md-6">
             <h4>Experience</h4>
-            <div class="card-res" style="width: 25rem">
+            <div class="card-res" style="width: 28rem">
+              <div class="card-body">
+                <h5 class="card-title">FK Adams constrution</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Labourer</h6>
+                <h6 class="card-subtitle mb-2 text-muted">2021-Present</h6>
+              </div>
+            </div>
+            <div class="card-res" style="width: 28rem">
               <div class="card-body">
                 <h5 class="card-title">FK Adams constrution</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Labourer</h6>
@@ -39,7 +46,7 @@
         </div>
       </div>
       <div class="skills-container">
-        <div class="row flex-md-row flex-sm-column">
+        <div class="row">
           <div class="card-skills col-md-6" style="width: 18rem">
             <div class="card-body">
               <h5 class="card-title">Bootstrap</h5>
@@ -64,11 +71,35 @@
               </p>
             </div>
           </div>
+          <div class="card-skills col-md-6" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">
+                <i class="fa-brands fa-css3"></i>
+              </p>
+            </div>
+          </div>
+          <div class="card-skills col-md-6" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">
+                <i class="fa-brands fa-css3"></i>
+              </p>
+            </div>
+          </div>
+          <div class="card-skills col-md-6" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">
+                <i class="fa-brands fa-css3"></i>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </div>
-     <Footer />
+  <Footer />
 </template>
 <script>
 import NavBar from "@/components/NavBar.vue";
@@ -80,7 +111,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -113,15 +144,18 @@ export default {
 }
 
 .skills-container {
+  padding-top: 28px;
+}
+.row {
   display: flex;
   justify-content: space-between;
-  padding-top: 28px;
 }
 .card-skills {
   margin-right: 20px;
   border: solid;
   padding: 10px;
-  margin: 25px;
+  margin-bottom: 25px;
+  width: 35%;
 }
 
 .card-text {
@@ -132,5 +166,8 @@ export default {
   font-size: 5rem;
   display: flex;
   justify-content: center;
+}
+.col-md-6 {
+  width: 37%;
 }
 </style>
