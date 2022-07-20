@@ -1,195 +1,25 @@
 <template>
   <NavBar />
-  <div>
-    <!-- 
-      <div class="section-header">
-        <h3>These are Testimonials</h3>
-      </div>
-      <carousel class="tes-container">
-        <div class="owl-carousel">
-          <div class="p-3">
-            <div class="bg-dark text-white p-3">
-              <div class="tes">
-                <div class="tes-header">
-                  <div class="tes-img">
-                    <img
-                      src="https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-1.jpg?raw=true"
-                      style="height: 50px"
-                    />
-                  </div>
-                  <div class="tes-authour">
-                    <h5>Mika Rinquest</h5>
-                    <h6>Colleage</h6>
-                  </div>
-                </div>
-                <div class="tes-body">
-                  <p>
-                    Isma'eel usually keeps to himself, so people often don't
-                    notice him. However, he has a good understanding of the work
-                    he does and helps others when they need it.
-                  </p>
-                </div>
-              </div>
+  <div id="testimonial">
+    <div class="container-fluid container">
+      <div v-for="testimonial in testimonials" :key="testimonial.id">
+        <div class="card-res flipcard" style="width: 28rem">
+          <div class="card-body flipcard-inner">
+            <div class="flipcard-front">
+              <!-- <h5 class="card-title">Life Choices</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Wed development and programming bootcamp
+          </h6>
+          <h6 class="card-subtitle mb-2 text-muted">2022-Present</h6> -->
+              <img :src="testimonial.image" />
             </div>
-          </div>
-          <div class="p-3">
-            <div class="bg-dark text-white p-3">
-              <div class="tes">
-                <div class="tes-header">
-                  <div class="tes-img">
-                    <img
-                      src="https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-2.jpg?raw=true"
-                      style="height: 50px"
-                    />
-                  </div>
-                  <div class="tes-authour">
-                    <h5>Jason Wandrag</h5>
-                    <h6>Lecturer</h6>
-                  </div>
-                </div>
-                <div class="tes-body">
-                  <p>
-                    Isma'eel has a great personality and he brightens up the day
-                    of the people around him. He motivates those around him
-                    whilst maintaining a positive environment. Isma'eel is also
-                    very dedicated to his work and has steadily improved in the
-                    short time that I have known him. I know that he will go far
-                    on his journey.
-                  </p>
-                </div>
-              </div>
+            <div class="flipcard-back">
+              <h5>{{ testimonial.name }}</h5>
+              <h6>{{ testimonial.role }}</h6>
+              <p>
+                {{ testimonial.description }}
+              </p>
             </div>
-          </div>
-          <div class="p-3">
-            <div class="bg-dark text-white p-3">
-              <div class="tes">
-                <div class="tes-header">
-                  <div class="tes-img">
-                    <img
-                      src="https://picsum.photos/200/300?random=10"
-                      style="height: 50px"
-                    />
-                  </div>
-                  <div class="tes-authour">
-                    <h5>Milo</h5>
-                    <h6>Head of Nothing</h6>
-                  </div>
-                </div>
-                <div class="tes-body">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Sit modi harum veniam assumenda dicta odio, repudiandae
-                    culpa iusto provident nesciunt!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-3">
-            <div class="bg-dark text-white p-3">
-              <div class="tes">
-                <div class="tes-header">
-                  <div class="tes-img">
-                    <img
-                      src="https://picsum.photos/200/300?random=11"
-                      style="height: 50px"
-                    />
-                  </div>
-                  <div class="tes-authour">
-                    <h5>Milo</h5>
-                    <h6>Head of Nothing</h6>
-                  </div>
-                </div>
-                <div class="tes-body">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Sit modi harum veniam assumenda dicta odio, repudiandae
-                    culpa iusto provident nesciunt!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </carousel>
-    </section> -->
-    <div
-      id="carouselExampleCaptions"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div>
-            <img
-              src="https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-1.jpg?raw=true"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Mika Rinquest</h5>
-            <h6>Colleage</h6>
-            <p>
-              Isma'eel usually keeps to himself, so people often don't notice
-              him. However, he has a good understanding of the work he does and
-              helps others when they need it.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img
-              src="https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-2.jpg?raw=true"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Jason Wandrag</h5>
-            <h6>Lecturer</h6>
-            <p>
-              Isma'eel has a great personality and he brightens up the day of
-              the people around him. He motivates those around him whilst
-              maintaining a positive environment. Isma'eel is also very
-              dedicated to his work and has steadily improved in the short time
-              that I have known him. I know that he will go far on his journey.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img
-              src="https://picsum.photos/200/300?random=10"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
           </div>
         </div>
       </div>
@@ -208,7 +38,30 @@ export default {
     NavBar,
     Footer,
   },
-  methods: {},
+  data() {
+    return {
+      testimonials: [
+        {
+          id: "1",
+          name: "Mika Rinquest",
+          role: "College",
+          description:
+            "Isma'eel usually keeps to himself, so people often don't notice him. However, he has a good understanding of the work he does and helps others when they need it.",
+          image:
+            "https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-1.jpg?raw=true",
+        },
+        {
+          id: "2",
+          name: "Jason Wandrag",
+          role: "Lecturer",
+          description:
+            "Isma'eel has a great personality and he brightens up the day of the people around him. He motivates those around him whilst maintaining a positive environment. Isma'eel is also very dedicated to his work and has steadily improved in the short time that I have known him. I know that he will go far on his journey.",
+          image:
+            "https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-2.jpg?raw=true",
+        },
+      ],
+    };
+  },
 };
 </script>
 <style scoped>
@@ -249,7 +102,7 @@ button.owl-dot.active {
   height: 100vh;
 }
 img {
-  height: 47rem;
+  height: 22rem;
   /* width: 80% !important; */
   object-fit: scale-down;
   background-color: black;
@@ -257,4 +110,42 @@ img {
 /* .carousel-caption {
   background-color: black;
 } */
+.flipcard {
+  background-color: transparent;
+  width: 20%;
+  aspect-ratio: 1;
+  perspective: 1000px;
+}
+.flipcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flipcard:hover .flipcard-inner {
+  transform: rotateY(180deg);
+}
+.flipcard-front,
+.flipcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flipcard-front {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flipcard-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+.container {
+  display: flex;
+}
 </style>

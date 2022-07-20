@@ -146,7 +146,7 @@ input {
 
 textarea.form-control {
   border: none;
-  border-bottom: solid;
+  border-bottom: solid black;
   margin-bottom: 10px;
   background-color: transparent;
 }
@@ -174,7 +174,10 @@ li.m {
   margin-right: 10px;
 }
 .o {
-  background-color: #0d6efd;
+  background-color: transparent;
+}
+.o:hover {
+  background-color: antiquewhite;
 }
 .y {
   display: flex;
