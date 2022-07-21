@@ -3,7 +3,7 @@
   <section id="about" class="about">
     <div class="container-p container-fliud" id="container-p">
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-lg-6">
           <div class="img-a border d-flex justify-content-center">
             <div class="card img">
               <!-- style="width: 18rem" -->
@@ -15,7 +15,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-lg-6">
           <div class="about-content">
             <h2 class="h2">Nice to meet you</h2>
             <h3 class="h3">Aspiring Full Stack Developer</h3>
@@ -117,5 +117,14 @@ export default {
 }
 .details-left {
   padding-right: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* .img {
+    height: 50rem;
+  } */
 }
 </style>

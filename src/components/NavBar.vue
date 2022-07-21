@@ -56,10 +56,9 @@ export default {
   padding: 1% 10%;
   align-items: center;
   justify-content: space-between;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 router-link {
   display: flex;
-  
 }
 </style>

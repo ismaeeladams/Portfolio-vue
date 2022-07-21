@@ -2,7 +2,7 @@
   <NavBar />
   <div class="home">
     <div class="landing">
-      <div class="landing-content">
+      <div class="landing-content container-fluid row">
         <p>Hi, I'm Isma'eel Adams</p>
         <h1>
           <span class="cursive">Aspiring</span> Full Stack
@@ -41,19 +41,25 @@ export default {
   background-size: cover;
   background-position: center;
   position: relative;
-}
-.landing-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 300px;
+  justify-content: center;
 }
+/* .landing-content {
+  padding-top: 300px;
+} */
 p {
   font-size: 24px;
   font-weight: bold;
 }
 h1 {
-  font-size: 80px;
+  font-size: 65px;
   font-weight: 900;
+}
+@media screen and (max-width: 290px) {
+  h1 {
+    font-size: 48px;
+    font-weight: 900;
+  }
 }
 </style>

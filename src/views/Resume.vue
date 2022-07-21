@@ -268,4 +268,13 @@ i {
   color: white;
   transform: rotateY(180deg);
 }
+@media screen and (max-width: 540px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+}
 </style>

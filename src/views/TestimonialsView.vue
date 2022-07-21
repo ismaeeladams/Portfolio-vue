@@ -1,9 +1,9 @@
 <template>
   <NavBar />
   <div id="testimonial">
-    <div class="container-fluid container">
+    <div class="container-fluid container col-md-6">
       <div v-for="testimonial in testimonials" :key="testimonial.id">
-        <div class="card-res flipcard" style="width: 28rem">
+        <div class="card-res flipcard">
           <div class="card-body flipcard-inner">
             <div class="flipcard-front">
               <!-- <h5 class="card-title">Life Choices</h5>
@@ -66,7 +66,7 @@ export default {
 </script>
 <style scoped>
 #testimonial {
-  /* height: 59vh; */
+  /* height: 94vh; */
   padding: 5% 10%;
   background-color: #18182f;
 }
@@ -145,7 +145,22 @@ img {
   color: white;
   transform: rotateY(180deg);
 }
-.container {
+/* .container {
   display: flex;
+} */
+.card-res {
+  width: 28rem;
+  padding: 30px;
+  max-width: 95%;
+  min-height: 300px;
+  margin-bottom: 20px;
+  border: solid;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  .card-res {
+    width: 18rem;
+  }
 }
 </style>
