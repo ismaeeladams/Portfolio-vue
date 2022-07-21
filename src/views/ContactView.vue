@@ -170,7 +170,7 @@ textarea.form-control {
   background: #0a55c3;
 }
 li.m {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-right: 10px;
 }
 .o {

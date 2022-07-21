@@ -102,8 +102,8 @@ button.owl-dot.active {
   height: 100vh;
 }
 img {
-  height: 22rem;
-  /* width: 80% !important; */
+  height: 100%;
+  width: 100% !important;
   object-fit: scale-down;
   background-color: black;
 }
@@ -123,6 +123,9 @@ img {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .flipcard:hover .flipcard-inner {
   transform: rotateY(180deg);
@@ -161,6 +164,10 @@ img {
 @media screen and (max-width: 500px) {
   .card-res {
     width: 18rem;
+    height: 28rem;
+  }
+  img {
+    object-fit: cover;
   }
 }
 </style>
