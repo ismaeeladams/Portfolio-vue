@@ -4,6 +4,7 @@
     <div class="landing">
       <div class="landing-content container-fluid row">
         <p>Hi, I'm Isma'eel Adams</p>
+        <p>an</p>
         <h1>
           <span class="cursive">Aspiring</span> Full Stack
           <span>Developer</span>
@@ -32,12 +33,16 @@ export default {
   scroll-behavior: smooth;
   color: white;
 }
+.cursive {
+  font-family: "Lobster", cursive;
+}
 .landing {
   /* max-width: 100%;
   height: auto; */
   height: 100vh;
   /* background-image: url("http://127.0.0.1:5500/src/assets/Images/Landing.jpg"); */
-  background: #0e139a;
+  /* background: #0e139a; */
+  background: #121231;
   background-size: cover;
   background-position: center;
   position: relative;

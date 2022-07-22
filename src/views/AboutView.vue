@@ -18,7 +18,7 @@
         <div class="col-lg-6">
           <div class="about-content">
             <h2 class="h2">Nice to meet you</h2>
-            <h3 class="h3">Aspiring Full Stack Developer</h3>
+            <!-- <h3 class="h3">Aspiring Full Stack Developer</h3> -->
             <p class="p">
               I am often told that I am charismatic, polite and hold good
               company. I'm energetic and eager to learn new skills, my

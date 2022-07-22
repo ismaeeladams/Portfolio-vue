@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <div class="navbar">
     <button
       class="btn btn-primary"
       type="button"
@@ -7,8 +7,7 @@
       data-bs-target="#nav"
       aria-controls="nav"
     >
-      <!-- <i class="fa-solid fa-bars-staggered"></i> -->
-      ==
+      <i class="fa-solid fa-bars-staggered"></i>
     </button>
     <div
       class="offcanvas offcanvas-end"
@@ -19,7 +18,7 @@
       aria-labelledby="navLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="navLabel">Navbar</h5>
+        <h5 class="offcanvas-title" id="navLabel"></h5>
         <button
           type="button"
           class="btn-close text-reset"
@@ -29,17 +28,19 @@
       </div>
       <div class="offcanvas-body">
         <nav>
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About Me</router-link> |
-          <router-link to="/projects">Projects</router-link> |
-          <router-link to="/resume">Resume</router-link> |
-          <router-link to="/testimonials">Testimonials</router-link> |
-          <router-link to="/contact">Contact</router-link> |
+          <router-link to="/" class="links">Home</router-link>
+          <router-link to="/about" class="links">About Me</router-link>
+          <router-link to="/projects" class="links">Projects</router-link>
+          <router-link to="/resume" class="links">Resume</router-link>
+          <router-link to="/testimonials" class="links"
+            >Testimonials</router-link
+          >
+          <router-link to="/contact" class="links">Contact</router-link>
         </nav>
         <router-view />
       </div>
     </div>
-  </nav>
+  </div>
 </template>
 <script>
 export default {
@@ -58,8 +59,31 @@ export default {
   justify-content: space-between;
   /* overflow-y: hidden; */
 }
-nav {
+nav > * {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 136%;
+}
+/* .offcanvas-body {
+  height: 100%;
+} */
+nav {
+  height: 100%;
+}
+.links {
+  height: 17%;
+  /* border: 2px solid black; */
+}
+.links:hover {
+  background-color: #8f4c87;
+  border-radius: 15%;
+}
+/* router-link {
+  height: 31%;
+} */
+.offcanvas {
+  background-color: white;
 }
 </style>
