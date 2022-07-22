@@ -42,7 +42,8 @@ export default {
   height: 100vh;
   /* background-image: url("http://127.0.0.1:5500/src/assets/Images/Landing.jpg"); */
   /* background: #0e139a; */
-  background: #121231;
+  /* background: #121231; */
+  background-image: linear-gradient(to bottom, #0d0651, #002f75, #005390, #0076a2, #0098af, #00a7b2, #00b6af, #2bc4a8, #00c395, #00c17f, #00be64, #24bb45);
   background-size: cover;
   background-position: center;
   position: relative;
