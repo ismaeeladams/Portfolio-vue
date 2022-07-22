@@ -75,15 +75,18 @@ nav {
 .links {
   height: 17%;
   /* border: 2px solid black; */
+  color: black;
 }
 .links:hover {
-  background-color: #8f4c87;
+  /* background-color: #8f4c87; */
+    background-image: linear-gradient(to bottom, #0d0651, #002f75, #005390, #0076a2, #0098af, #00a7b2, #00b6af, #2bc4a8, #00c395, #00c17f, #00be64, #24bb45);
   border-radius: 15%;
 }
 /* router-link {
   height: 31%;
 } */
 .offcanvas {
-  background-color: white;
+  /* background-color: white; */
+  background-color: #383838;
 }
 </style>

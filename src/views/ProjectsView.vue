@@ -30,136 +30,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="project-card-pro">
-              <div class="card" style="width: 100%">
-                <img
-                  src="https://picsum.photos/200/300?random=2"
-                  class="card-img-top"
-                  alt="Pic"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Holiday-Destination</h5>
-
-                  <a
-                    href="https://github.com/ismaeeladams/Holiday-Destination.git"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://voluble-tulumba-cf4224.netlify.app"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-section container-fluid col-md-4">
-            <div class="project-card-pro">
-              <div class="card" style="width: 100%">
-                <img
-                  src="https://picsum.photos/200/300?random=3"
-                  class="card-img-top"
-                  alt="Pic"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Portfolio</h5>
-
-                  <a
-                    href="https://github.com/ismaeeladams/portfolio.git"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://grand-praline-11396e.netlify.app"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Live</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="project-card-pro">
-              <div class="card" style="width: 100%">
-                <img
-                  src="https://picsum.photos/200/300?random=4"
-                  class="card-img-top"
-                  alt="Pic"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Mock</h5>
-
-                  <a
-                    href="https://github.com/ismaeeladams/mock.git"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://clinquant-figolla-c9ddff.netlify.app"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-section container-fluid col-md-4">
-            <div class="project-card-pro">
-              <div class="card" style="width: 100%">
-                <img
-                  src="https://picsum.photos/200/300?random=3"
-                  class="card-img-top"
-                  alt="Pic"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Portfolio</h5>
-
-                  <a
-                    href="https://github.com/ismaeeladams/portfolio.git"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://grand-praline-11396e.netlify.app"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Live</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="project-card-pro">
-              <div class="card" style="width: 100%">
-                <img
-                  src="https://picsum.photos/200/300?random=4"
-                  class="card-img-top"
-                  alt="Pic"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Mock</h5>
-
-                  <a
-                    href="https://github.com/ismaeeladams/mock.git"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://clinquant-figolla-c9ddff.netlify.app"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Live</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div> -->
               </div>
             </div>
           </div>
@@ -210,7 +80,7 @@ export default {
         },
         {
           id: "5",
-          image: "",
+          image: "https://i.postimg.cc/1t4fWMXX/beach2.jpg",
           title: "Property Listing",
           githubLink: "https://github.com/ismaeeladams/Property-List",
           liveLink: "https://property-list-ismaeel.netlify.app",
@@ -238,7 +108,9 @@ export default {
 #project {
   /* height: 102vh; */
   padding: 5% 10%;
-  background-color: #121231;
+  /* background-color: #121231; */
+    background-image: linear-gradient(to bottom, #0d0651, #002f75, #005390, #0076a2, #0098af, #00a7b2, #00b6af, #2bc4a8, #00c395, #00c17f, #00be64, #24bb45);
+
 }
 .card-title {
   color: black;

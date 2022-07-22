@@ -22,7 +22,10 @@ export default {
 </script>
 <style>
 footer {
-  background-color: #18182f;
+  /* background-color: #18182f; */
+  /* background-color: transparent; */
+    background-image: linear-gradient(to bottom, #0d0651, #002f75, #005390, #0076a2, #0098af, #00a7b2, #00b6af, #2bc4a8, #00c395, #00c17f, #00be64, #24bb45);
+
 }
 .footer-container {
   display: flex;

@@ -13,7 +13,10 @@
           </p>
           <ul class="list-unstyled">
             <li>
-              <i class="fa-solid fa-location-dot"></i>Grassy Park, Cape Town
+            <a href="https://www.google.com/maps/place/25+Linda+Rd,+Lotus+River,+Cape+Town,+7805/@-34.0343922,18.5082063,19z/data=!4m5!3m4!1s0x1dcc43ed0781478f:0x71b6b7b018fbc741!8m2!3d-34.03433!4d18.50855" target="_blank">
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+              Grassy Park, Cape Town
             </li>
             <li>
               <a href="tel:072 840 1187"

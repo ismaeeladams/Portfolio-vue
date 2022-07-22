@@ -60,22 +60,22 @@ export default {
             "https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-2.jpg?raw=true",
         },
         {
-          id: "1",
-          name: "Mika Rinquest",
-          role: "College",
+          id: "3",
+          name: "Kamal Adams",
+          role: "Former Colleage",
           description:
-            "Isma'eel usually keeps to himself, so people often don't notice him. However, he has a good understanding of the work he does and helps others when they need it.",
+            "Isma'eel is unique and is unpredictable at times",
           image:
-            "https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-1.jpg?raw=true",
+            "https://i.postimg.cc/vBBjKx53/tes-4.jpg",
         },
         {
-          id: "2",
-          name: "Jason Wandrag",
-          role: "Lecturer",
+          id: "4",
+          name: "Peter",
+          role: "Former Colleage",
           description:
-            "Isma'eel has a great personality and he brightens up the day of the people around him. He motivates those around him whilst maintaining a positive environment. Isma'eel is also very dedicated to his work and has steadily improved in the short time that I have known him. I know that he will go far on his journey.",
+            " A happy go lucky person that is always ready to help and is constantly trying to learn new things",
           image:
-            "https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-2.jpg?raw=true",
+            "https://i.postimg.cc/fRN4BLy0/tes-3.jpg",
         },
       ],
     };
@@ -86,7 +86,9 @@ export default {
 #testimonial {
   /* height: 94vh; */
   padding: 5% 10%;
-  background-color: #18182f;
+  /* background-color: #18182f; */
+    background-image: linear-gradient(to bottom, #0d0651, #002f75, #005390, #0076a2, #0098af, #00a7b2, #00b6af, #2bc4a8, #00c395, #00c17f, #00be64, #24bb45);
+
 }
 .tes-img {
   /* width: 50px;
