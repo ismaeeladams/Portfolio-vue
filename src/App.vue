@@ -25,4 +25,8 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster"), url(@/assets/fonts/Lobster-Regular.ttf);
+}
 </style>

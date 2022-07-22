@@ -58,7 +58,8 @@ export default {
   justify-content: space-between;
   /* overflow-y: hidden; */
 }
-router-link {
+nav {
   display: flex;
+  flex-direction: column;
 }
 </style>

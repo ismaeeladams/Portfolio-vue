@@ -59,6 +59,24 @@ export default {
           image:
             "https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-2.jpg?raw=true",
         },
+        {
+          id: "1",
+          name: "Mika Rinquest",
+          role: "College",
+          description:
+            "Isma'eel usually keeps to himself, so people often don't notice him. However, he has a good understanding of the work he does and helps others when they need it.",
+          image:
+            "https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-1.jpg?raw=true",
+        },
+        {
+          id: "2",
+          name: "Jason Wandrag",
+          role: "Lecturer",
+          description:
+            "Isma'eel has a great personality and he brightens up the day of the people around him. He motivates those around him whilst maintaining a positive environment. Isma'eel is also very dedicated to his work and has steadily improved in the short time that I have known him. I know that he will go far on his journey.",
+          image:
+            "https://github.com/ismaeeladams/Portfolio-vue/blob/main/src/assets/Images/tes-2.jpg?raw=true",
+        },
       ],
     };
   },
@@ -166,7 +184,7 @@ img {
     width: 18rem;
     height: 28rem;
   }
-  img {
+  img{
     object-fit: cover;
   }
 }
